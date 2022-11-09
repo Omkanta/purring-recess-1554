@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free work tracker - Bankai</title>
+    <style>
+
+        #navbar{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 18px;
+        }
+        #navbar>img{
+           width: 150px;
+        }
+        #navbar>button{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            padding-right: 40px;
+        }
+        #navbar>button:nth-child(6){
+           border: 1px solid rgb(38, 168, 38);
+            background-color: white;
+            border-radius: 7px;
+        }
+        #navbar>button:nth-child(7){
+            background-color:  rgb(38, 168, 38) ;
+            border: none;
+            border-radius: 7px;
+            color: white;
+        }
+        #top{
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+        #top>img{
+            width: 100%;
+        }
+        #top>div:nth-child(1){
+            width: 70%;
+         margin-left: 10px;
+         margin-right: 20px;
+        }
+        #top>div:nth-child(1)>h4{
+            color: rgb(12, 180, 12) ;
+            font-size: 18px;
+        }
+        #top-input{
+            padding: 15px 40px;
+           border-color: rgb(13, 197, 13);
+           border: 1px solid rgb(38, 168, 38);
+        }
+        #top>div>button:nth-child(5){
+            background-color:  rgb(38, 168, 38) ;
+            border: none;
+            border-radius: 2px;
+            padding: 15px 30px;
+            color: white;
+        }
+        #mid-top>h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <img src="logo.png" alt="">
+        <h4>Home</h4>
+        <h4>Product</h4>
+        <h4>Pricing</h4>
+        <h4>Reviews</h4>
+        <button>LOG IN </button>
+        <button>START FREE</button>
+    </div>
+
+    <div id="top">
+        <div>
+            <h4>Time tracking</h4>
+            <h1>The robust time tracker made for your workflow. </h1>
+            <h3>Manage your hours with ease with an all-in-one time tracker, timesheets and billing system.</h3>
+            <input id="top-input" type="text" placeholder="Enter your Email">          
+            <button>START FREE</button>
+        </div>
+        <div>
+            <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bbbc1e37d0b57e90a317c_time-tracking-img-min-p-800.png" alt="">
+        </div>
+    </div>
+    <div id="mid-top">
+        <h1>A fully-featured time tracker that’s built specifically for online contract work and invoicing clients.</h1>
+        <div>
+            <div>
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c14c3d1e8b33_ill_Easily%20Billable.svg" alt="">
+                <h2>Easily Billable</h2>
+                <p>Set an hourly rate per-project for tracking time and automatically invoicing the completed timesheet.</p>
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c1031b1e8b34_ill_Project-Based.svg" alt="">
+                <h2>Project-Based</h2>
+                <p>Track time on projects with your collaborators and see how many hours still need to be billed.</p>
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c122ac1e8b35_ill_Cross-Platform.svg" alt="">
+                <h2>Cross-Platform</h2>
+                <p>Use the Bonsai time tracker on the web, mobile apps, macOS app and Chrome Extension.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
