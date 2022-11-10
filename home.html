@@ -11,6 +11,7 @@
             display: flex;
             justify-content: space-evenly;
             font-size: 18px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
         #navbar>img{
            width: 150px;
@@ -24,12 +25,12 @@
         #navbar>button:nth-child(6){
            border: 1px solid rgb(38, 168, 38);
             background-color: white;
-            border-radius: 7px;
+            border-radius: 5px;
         }
         #navbar>button:nth-child(7){
             background-color:  rgb(38, 168, 38) ;
             border: none;
-            border-radius: 7px;
+            border-radius: 5px;
             color: white;
         }
         #top{
@@ -46,23 +47,133 @@
          margin-right: 20px;
         }
         #top>div:nth-child(1)>h4{
-            color: rgb(12, 180, 12) ;
+            color: rgb(38, 168, 38);
             font-size: 18px;
         }
         #top-input{
             padding: 15px 40px;
-           border-color: rgb(13, 197, 13);
+           border-color: rgb(38, 168, 38);
            border: 1px solid rgb(38, 168, 38);
         }
         #top>div>button:nth-child(5){
-            background-color:  rgb(38, 168, 38) ;
+            background-color: rgb(38, 168, 38) ;
             border: none;
-            border-radius: 2px;
+            border-radius: 3px;
             padding: 15px 30px;
             color: white;
         }
         #mid-top>h1{
             text-align: center;
+        }
+        #mid-top>div{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+        }
+        #mid-top>div>div{
+            width: 20%;
+        }
+
+        #mid-mid>div{
+            display: flex;
+            width: 80%;
+           margin: auto;
+           justify-content: space-between;
+            align-items: center;
+        }
+        #mid-mid>div>div{
+            width: 70%;
+            margin: 0px 30px;
+        }
+        #mid-mid>div>div>img{
+            width: 100%;
+        }
+        #mid-bot-1{
+            display: flex;
+           justify-content: center;
+           margin:70px 0px;
+        }
+        #mid-bot-1>div{
+            width: 50%;
+            text-align: center; 
+        }
+        #mid-bot-2{
+            display: flex;
+            width: 70%;
+            margin: auto;
+            justify-content: space-between;
+            
+        }
+        #mid-bot-2>div{
+            width: 40%;
+        }
+        #bot-top{
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        #bot-top>div:first-child{
+            display: flex;
+            width: 70%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: auto;
+            background-color: #dcf7de;
+            padding: 50px 0px;
+            border-radius: 5px;
+        }
+        #bot-top>div>h1{
+            width: 50%;
+            justify-content: space-between;
+        }
+        #bot-top>div>button{
+            height: 50px;
+            background-color:rgb(38, 168, 38);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 0px 20px;
+        }
+        #bot-top>div:last-child{
+            background-color: #bce7bf;
+            height: auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-evenly;
+           align-items: center;
+            margin: auto;
+            padding: 10px 0px;
+        }
+        #bot-bot>div:first-child{
+            width: 40%;
+            margin: auto;
+            padding: 20px;
+        }
+        #bot-bot>div:last-child{
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            
+            margin: auto;
+        }
+        #bot-bot>div:last-child>div{
+            display: flex;
+           width: 47%;
+           box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+           margin-bottom: 50px;
+        }
+        #bot-bot>div:last-child>div>div>h2,#bot-bot>div:last-child>div>div>p{
+            margin-left: 30px;
+        }
+        #bottom{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+           margin-top: 50px;
+        }
+        #bottom>div{
+            width: 80%;
+            padding: 30px;
         }
     </style>
 </head>
@@ -110,6 +221,134 @@
             </div>
         </div>
     </div>
-
+    <div id="mid-mid">
+        <div>
+            <div>
+                <h1>Invoice Hours</h1>
+                <p>Set a project’s hourly rate, start tracking time and bill time to your client with a click. Round the time up to make the billing even smoother.</p>
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bc77f7724a02f0a97e5e1_create%20an%20invoice-min%20(2).png" alt="">
+            </div>
+        </div>
+        <div>
+            <div><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bc8038569d7612605c001_invoice%20timesheet-min.png" alt=""></div>
+            <div>
+                <h1>Centralize Timesheets</h1>
+                <p>Whether you’re tracking time as a team on a project or working solo, you can keep all your project’s timesheets in the same place to see the hours billed and to-be paid.</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h1>Use It Anywhere</h1>
+                <p>Download the app on iOS, Android, Mac and Chrome so the time tracker works the way you do. Use a time tracker that supports your workflow.</p>
+            </div>
+            <div><img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bc84f8569d7c4cc05c0a2_timer%20graphic-min.png" alt=""> </div>
+        </div>
+    </div>
+    <div id="mid-bot-1">
+        <div>
+            <h1>Trusted by 500K+ self-employed workers
+                and small businesses</h1>
+            <h2>Whether you’re just getting started or your business is booming, Bonsai has you covered.</h2>
+        </div>
+    </div>
+        <div id="mid-bot-2">
+            <div>
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7ca8ebfeb662_ill_Built%20for_4%20block.svg" alt="">
+                <h2>Built for All Work Types</h2>
+                <p>We proudly back people with wide-ranging businesses—from design and marketing to development, writing, and photography</p>
+            </div>
+            <div>
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c967efeb661_ill_Global%20Support_4%20block.svg" alt="">
+                <h2>Built for Global Businesses</h2>
+                <p>Bonsai has international coverage across the United States, Canada, UK, Australia and more, with 180 currencies supported.</p>
+            </div>
+        </div>
+        <div id="bot-top">
+            <div>
+                <h1>Simplify your workflow with Bonsai time tracking.</h1>
+                <button>START FREE</button>
+            </div>
+            <div>
+                <h3>Available for download on the most popular platforms:</h3>
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c145b81e8b36_chrome.svg" alt="">
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c12aac1e8b37_ios.svg" alt="">
+                <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fde3f8e28c141b51e8b38_android.svg" alt="">
+            </div>
+        </div>
+        <div id="bot-bot">
+            <div>
+                <h1>Keep Exploring Bonsai’s Features</h1>
+            </div>
+            <div>
+                <div>
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fdcff2a5865afca6505f5_Explore%20invoices.svg" alt="">
+                    <div>
+                        <h2>Invoices</h2>
+                        <p>aliquid sint nihil ex cumque possimus, alias necessitatibus impedit excepturi voluptatibus iusto obcaecati doloremque beatae! Aliquid alias enim modi error.</p>                        
+                    </div>
+                </div>
+                <div>
+                    <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fdcff2a586587ad6505f6_Explore%20task%20management.svg" alt="">
+                    <div>
+                        <h2>Invoices</h2>
+                        <p>aliquid sint nihil ex cumque possimus, alias necessitatibus impedit excepturi voluptatibus iusto obcaecati doloremque beatae! Aliquid alias enim modi error.</p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div>
+                <h3>PRODUCT</h3>
+                <p>Proposals</p>
+                <p>Contracts</p>
+                <p>Invoicing</p>
+                <p>Client CRM</p>
+                <p>Time Tracking</p>
+                <p>Task Tracking</p>
+                <p>Forms</p>
+                <p>Accounting</p>
+                <p>Bonsai Tax</p>
+                <p>Bonsai Cash</p>
+                <p>Pricing</p>
+                <p>Bonsai Reviews</p>
+            </div>
+            <div>
+                <h3>Templates</h3>
+                <p>Invoice Templates</p>
+                <p>Proposal Templates</p>
+                <p>Contract Templates</p>
+                <p>Agreement Templates</p>
+                <p>Scope of Work Templates</p>
+                <p>Quote Templates</p>
+                <p>Credit Note Templates</p>
+                <p>Estimate Templates</p>
+                <p>  Form Templates</p>
+            </div>
+            <div>
+                <h3>FREE RESOURCES</h3>
+                <p>Freelance Resources</p>
+                <p>Freelance Blog by Bonsai</p>
+                <p>How to Write a Contract</p>
+                <p>Online Signature Maker</p>
+                <p>Self-Employed Taxes Hub</p>
+                <p>Self-Employed Tax Calculator</p>
+                <p>Self-Employed Tax Deductions</p>
+            </div>
+            <div>
+                <h3>BANKAI</h3>
+                <p>About</p>
+                <p>Career</p>
+                <p>Support</p>
+                <p>Linkdin</p>
+                <p>Twitter</p>
+                <p>Privacy policy</p>
+                <p>Legal</p>
+                <p>Affiliates</p>
+                <p>Write for Us</p>
+                <p>Comparisons</p>
+            </div>
+        </div>
 </body>
 </html>
