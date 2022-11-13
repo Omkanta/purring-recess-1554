@@ -13,18 +13,19 @@
             align-items: center;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
-        #navbar>img{
+        #navbar>a>img{
            width: 150px;
         }
-        #navbar>button{
+        #navbar>a>button{
             padding: 12px 27px;
         }
-        #navbar>button:nth-child(6){
+        #navbar>a:nth-child(6)>button{
            border: 1px solid rgb(38, 168, 38);
             background-color: white;
             border-radius: 5px;
+            color:rgb(38, 168, 38) ;
         }
-        #navbar>button:nth-child(7){
+        #navbar>a>button{
             background-color:  rgb(38, 168, 38) ;
             border: none;
             border-radius: 5px;
@@ -69,17 +70,80 @@
             width: 80%;
             padding: 30px;
         }
+        #bottom>div>h3{
+            padding-bottom: 20px;
+        }
+        #mid>div:first-child{
+            text-align: center;
+            box-shadow: none;
+            justify-content: center;
+        }
+        #mid>div{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            align-items: center;
+            padding: 10px 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #mid>div:last-child>div>h4{
+            color: rgb(38, 168, 38);
+        }
+        #price-bot{
+            margin-top: 50px;
+            margin-bottom: 60px;
+            
+        }
+        #price-bot>div:first-child{
+            display: flex;
+            width: 70%;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: auto;
+            background-color: #dcf7de;
+            padding: 50px 0px;
+            border-radius: 5px;
+        }
+        #price-bot>div:nth-child(2){
+            text-align: center;
+            
+            font-size: 20px;
+            color:rgb(38, 168, 38) ;
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+        }
+        #price-bot>div:nth-child(3){
+            width: 60%;
+            margin: auto;
+            
+        }
+        #price-bot>div>h1{
+            width: 50%;
+            justify-content: space-between;
+        }
+        #price-bot>div>button{
+            height: 50px;
+            background-color:rgb(38, 168, 38);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 0px 20px;
+        }
     </style>
 </head>
 <body>
-        <div id="navbar">
-        <img src="logo.png" alt="">
-        <a href="home.html">Home</a>
-        <a>Product</a>
+    <div id="navbar">
+        <a href="index.html"><img src="logo.png" alt=""></a>
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
         <a href="price.html">Pricing</a>
         <a href="review.html">Reviews</a>
-        <button>LOG IN </button>
-        <button>START FREE</button>
+        <a href="login.html"><button>LOG IN </button></a>
+        <a href="signup.html"> <button>START FREE</button></a>
     </div>
     <h1 id="top-h1">Plans & Pricing</h1>
     <div id="top">
@@ -131,11 +195,49 @@
     </div>
     <div id="mid">
         <div><h1>Super charge your work with add-ons</h1></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+            <div>
+                <h2>Collaborators</h2>
+                <p>Invite other users to specific projects for limited access and functionality.</p>
+            </div>
+            <div><h1>Free</h1></div>
+        </div>
+        <div>
+            <div>
+                <h2>Partners</h2>
+                <p>Invite other users for full account access and company management.</p>
+            </div>
+            <div>
+                <h1>$9</h1>
+                <h5>/ MONTH</h5>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Bonsai Tax</h2>
+                <p>Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+                <h4>LEARN MORE ></h4>
+            </div>
+            <div>
+                <h1>$10</h1>
+                <h5>/ MONTH</h5>
+            </div>
+        </div>
     </div>
-        <div id="bottom">
+    <div id="price-bot">
+        <div>
+            <h1>It’s your business. We’re here to help it grow.</h1>
+            <button>START FREE</button>
+        </div>
+        <div><h1>Frequently Asked Questions</h1></div>
+        <div>
+            <h2>How does the free trial work?</h2>
+            <h2>Can I change plans anytime?</h2>
+            <h2>How do I pause my Bonsai subscription?</h2>
+            <h2>What is your refund policy?</h2>
+        </div>
+    </div>
+    <div id="bottom">
             <div>
                 <h3>PRODUCT</h3>
                 <p>Proposals</p>
@@ -186,6 +288,6 @@
                 <p>Write for Us</p>
                 <p>Comparisons</p>
             </div>
-        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up-Bankai</title>
+    <style>
+           #navbar{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 18px;
+            align-items: center;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        #navbar>a>img{
+           width: 150px;
+        }
+        #navbar>a>button{
+            padding: 12px 27px;
+        }
+        #navbar>a:nth-child(6)>button{
+           border: 1px solid rgb(38, 168, 38);
+            background-color: white;
+            border-radius: 5px;
+            color:rgb(38, 168, 38) ;
+        }
+        #navbar>a>button{
+            background-color:  rgb(38, 168, 38) ;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        #cont{
+            display: flex;
+            margin: auto;
+            width: 70%;
+            height: 100vh;
+         
+        }
+        #cont>div{
+            width: 40%;
+            padding: 30px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        #cont>div>form>input{
+            padding: 10px  50% 10px 10px;
+        
+        }
+        #cont>div>form>p{
+            text-align: center;
+        }
+        #cont>div>form>p:nth-child(9){
+            text-decoration: underline;
+            font-size: 13px;
+        }  
+         #cont>div>form>p:nth-child(8){
+            font-size: 13px;
+        }
+        #cont>div:first-child>img{
+            width: 140px;
+        }
+        #cont>div>form>div{
+            text-align: center;
+        }
+        #cont>div>form>div>button:first-child{
+            background-color: rgb(38, 168, 38);
+           border: none;
+           color: white;
+           border-radius: 5px;
+           padding: 10px 28%;
+           font-size: 15px;
+        }
+        #cont>div>form>div>button:last-child{
+            background-color: white;
+           border:1px solid rgb(38, 168, 38);
+           color: rgb(38, 168, 38);
+           border-radius: 5px;
+           padding: 10px 40%;
+           font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html"><img src="logo.png" alt=""></a>
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="price.html">Pricing</a>
+        <a href="review.html">Reviews</a>
+        <a href="login.html"><button>LOG IN </button></a>
+        <a href="signup.html"> <button>START FREE</button></a>
+    </div>
+    <div id="cont">
+        <div>
+            <img src="logo.png" alt="">
+            <p>Join 500,000+ freelancers and agencies using Bankai.</p>
+        </div>
+        <div>
+            <form>
+                <h1>Try Bonsai free with your Workflow today</h1>
+                <h5>E-MAIL</h5>
+                <input type="email" id="mail" placeholder="your@email.com">
+                <h5>FULL NAME</h5>
+                <input type="text" id="name" placeholder="Jane Smith">
+                <h5>PASSWORD</h5>
+                <input type="password" id="pass" placeholder="*******">
+                <p>By crating an account you accept our </p>
+                <p>Terms ands Conditons</p>
+                <div>
+                <button onclick="getData()">Create Free Account</button>
+                <p>Already have an Account?</p>
+                    <button>Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let arr=[];
+    function getData(event){
+        event.preventDefault();
+        let G_mail=document.querySelector("#mail").value;
+        let G_name=document.querySelector("#name").value;
+        let G_pass=document.querySelector("#pass").value;
+        let obj={G_mail,G_name,G_pass}
+        arr.push(obj);
+        localStorage.setItem("stored_data",JSON(arr));
+    }
+</script>
