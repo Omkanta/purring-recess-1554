@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free work tracker - Bankai</title>
     <style>
-
-        #navbar{
+            #navbar{
             display: flex;
             justify-content: space-evenly;
             font-size: 18px;
@@ -17,15 +16,16 @@
         #navbar>img{
            width: 150px;
         }
-        #navbar>button{
+        #navbar>a>button{
             padding: 12px 27px;
         }
-        #navbar>button:nth-child(6){
+        #navbar>a:nth-child(6)>button{
            border: 1px solid rgb(38, 168, 38);
             background-color: white;
             border-radius: 5px;
+            color:rgb(38, 168, 38) ;
         }
-        #navbar>button:nth-child(7){
+        #navbar>a>button{
             background-color:  rgb(38, 168, 38) ;
             border: none;
             border-radius: 5px;
@@ -53,7 +53,7 @@
            border-color: rgb(38, 168, 38);
            border: 1px solid rgb(38, 168, 38);
         }
-        #top>div>button:nth-child(5){
+        #top>div>a:nth-child(5)>button{
             background-color: rgb(38, 168, 38) ;
             border: none;
             border-radius: 3px;
@@ -123,7 +123,7 @@
             width: 50%;
             justify-content: space-between;
         }
-        #bot-top>div>button{
+        #bot-top>div>a>button{
             height: 50px;
             background-color:rgb(38, 168, 38);
             border: none;
@@ -173,17 +173,20 @@
             width: 80%;
             padding: 30px;
         }
+        #bottom>div>h3{
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div id="navbar">
         <img src="logo.png" alt="">
-        <a href="home.html">Home</a>
-        <a>Product</a>
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
         <a href="price.html">Pricing</a>
         <a href="review.html">Reviews</a>
-        <button>LOG IN </button>
-        <button>START FREE</button>
+        <a href="login.html"><button>LOG IN </button></a>
+        <a href="signup.html"> <button>START FREE</button></a>
     </div>
 
     <div id="top">
@@ -192,7 +195,7 @@
             <h1>The robust time tracker made for your workflow. </h1>
             <h3>Manage your hours with ease with an all-in-one time tracker, timesheets and billing system.</h3>
             <input id="top-input" type="text" placeholder="Enter your Email">          
-            <button>START FREE</button>
+            <a href="signup.html"><button>START FREE</button></a>
         </div>
         <div>
             <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e6bbbc1e37d0b57e90a317c_time-tracking-img-min-p-800.png" alt="">
@@ -265,8 +268,8 @@
         </div>
         <div id="bot-top">
             <div>
-                <h1>Simplify your workflow with Bonsai time tracking.</h1>
-                <button>START FREE</button>
+                <h1>Simplify your workflow with Bankai time tracking.</h1>
+                <a href="signup.html"><button>START FREE</button></a>
             </div>
             <div>
                 <h3>Available for download on the most popular platforms:</h3>

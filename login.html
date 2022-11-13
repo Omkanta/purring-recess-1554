@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankai Login</title>
+    <style>
+                #navbar{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 18px;
+            align-items: center;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        #navbar>a>img{
+           width: 150px;
+        }
+        #navbar>a>button{
+            padding: 12px 27px;
+        }
+        #navbar>a:nth-child(6)>button{
+           border: 1px solid rgb(38, 168, 38);
+            background-color: white;
+            border-radius: 5px;
+            color:rgb(38, 168, 38) ;
+        }
+        #navbar>a>button{
+            background-color:  rgb(38, 168, 38) ;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        #log-mid{
+            margin: auto;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 30%;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        #log-mid>input{
+            padding: 10px 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #log-mid>button{
+            background-color: rgb(38, 168, 38);
+           border: none;
+           color: white;
+           border-radius: 5px;
+           padding: 10px 28%;
+           font-size: 15px;
+        }
+        #log-mid>p{
+            color:rgb(38, 168, 38) ;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html"><img src="logo.png" alt=""></a>
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="price.html">Pricing</a>
+        <a href="review.html">Reviews</a>
+        <a href="login.html"><button>LOG IN </button></a>
+        <a href="signup.html"> <button>START FREE</button></a>
+    </div>
+    <div id="log-mid">
+            <h1>Log in </h1>
+            <input type="email" id="mail" placeholder="Email">
+            <br>
+            <input type="password" id="pass" placeholder="Password">
+            <h5>Remember me</h5>
+            <button>Log in</button>
+            <p>Reset Password</p>
+            <p>Resend Verification Email</p>
+    </div>
+</body>
+</html>

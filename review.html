@@ -13,18 +13,19 @@
             align-items: center;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
-        #navbar>img{
+        #navbar>a>img{
            width: 150px;
         }
-        #navbar>button{
+        #navbar>a>button{
             padding: 12px 27px;
         }
-        #navbar>button:nth-child(6){
+        #navbar>a:nth-child(6)>button{
            border: 1px solid rgb(38, 168, 38);
             background-color: white;
             border-radius: 5px;
+            color:rgb(38, 168, 38) ;
         }
-        #navbar>button:nth-child(7){
+        #navbar>a>button{
             background-color:  rgb(38, 168, 38) ;
             border: none;
             border-radius: 5px;
@@ -36,25 +37,140 @@
             text-align:center;
             margin-top: 200px;
         }
+        #rev-mid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        #rev-mid>div{
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #rev-mid>div>img:first-child{
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        #bottom{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+           margin-top: 50px;
+        }
+        #bottom>div{
+            width: 80%;
+            padding: 30px;
+        }
+        #bottom>div>h3{
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <div id="navbar">
-        <img src="logo.png" alt="">
-        <a href="home.html">Home</a>
-        <a>Product</a>
+        <a href="index.html"><img src="logo.png" alt=""></a>
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
         <a href="price.html">Pricing</a>
         <a href="review.html">Reviews</a>
-        <button>LOG IN </button>
-        <button>START FREE</button>
+        <a href="login.html"><button>LOG IN </button></a>
+        <a href="signup.html"> <button>START FREE</button></a>
     </div>
     <div id="top">
         <h1>Bonsai Reviews</h1>
         <h3>200,000+ Freelancers Love Bonsai. Here's why.</h3>
         <p>Last Updated April 21,2021</p>
     </div>
+    <div id="rev-mid">
+
+    </div>
+
+    <div id="bottom">
+        <div>
+            <h3>PRODUCT</h3>
+            <p>Proposals</p>
+            <p>Contracts</p>
+            <p>Invoicing</p>
+            <p>Client CRM</p>
+            <p>Time Tracking</p>
+            <p>Task Tracking</p>
+            <p>Forms</p>
+            <p>Accounting</p>
+            <p>Bonsai Tax</p>
+            <p>Bonsai Cash</p>
+            <p>Pricing</p>
+            <p>Bonsai Reviews</p>
+        </div>
+        <div>
+            <h3>Templates</h3>
+            <p>Invoice Templates</p>
+            <p>Proposal Templates</p>
+            <p>Contract Templates</p>
+            <p>Agreement Templates</p>
+            <p>Scope of Work Templates</p>
+            <p>Quote Templates</p>
+            <p>Credit Note Templates</p>
+            <p>Estimate Templates</p>
+            <p>  Form Templates</p>
+        </div>
+        <div>
+            <h3>FREE RESOURCES</h3>
+            <p>Freelance Resources</p>
+            <p>Freelance Blog by Bonsai</p>
+            <p>How to Write a Contract</p>
+            <p>Online Signature Maker</p>
+            <p>Self-Employed Taxes Hub</p>
+            <p>Self-Employed Tax Calculator</p>
+            <p>Self-Employed Tax Deductions</p>
+        </div>
+        <div>
+            <h3>BANKAI</h3>
+            <p>About</p>
+            <p>Career</p>
+            <p>Support</p>
+            <p>Linkdin</p>
+            <p>Twitter</p>
+            <p>Privacy policy</p>
+            <p>Legal</p>
+            <p>Affiliates</p>
+            <p>Write for Us</p>
+            <p>Comparisons</p>
+        </div>
+</div>
 </body>
 </html>
 <script>
+    let bag=[];
+    let url="https://636cfcae91576e19e31bce0f.mockapi.io/reviews";
+    async function getData(){
+        let res = await fetch(url);
+        let out= await res.json();
+        bag=out;
+        showData(bag)
+    }
+    getData()
+    function showData(arr){
+        arr.forEach(el => {
+            let div=document.createElement("div");
+            
+            let img1=document.createElement("img");
+            img1.setAttribute("src",el.avatar);
+
+            let img2=document.createElement("img");
+            img2.setAttribute("src","https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7c29a9feb660_quote-icon.svg");
+
+            let des=document.createElement("p");
+            des.innerText=el.description;
+
+            let name=document.createElement("h4");
+            name.innerText=el.name;
+
+            let occ=document.createElement("p");
+            occ.innerText=el.occupation;
+
+            div.append(img1,img2,des,name,occ);
+            document.querySelector("#rev-mid").append(div);
+        });
+    }
     
 </script>
